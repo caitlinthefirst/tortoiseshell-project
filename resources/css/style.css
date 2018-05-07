@@ -27,6 +27,7 @@ nav,
 .nav-menu,
 .banner-container,
 .feature-tiles,
+.img-tile,
 .info-tiles,
 .footer-content {
     display: flex;
@@ -56,7 +57,7 @@ nav {
     padding-left: 1rem;
 }
 
-.nav-logo {
+.logo {
     height: 1.5rem;
     margin-right: 1rem;
 }
@@ -78,7 +79,7 @@ nav {
     justify-content: flex-end;
 }
 
-.tagline {
+.banner {
     display: inline-block;
 
     background-color: white;
@@ -93,43 +94,58 @@ nav {
 
 /* Feature Tile Section */
 .feature-tiles {
-
+    justify-content: center;
 }
 
 .img-tile {
-
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 5rem;
+    height: 8rem;
+    margin: 3rem;
 }
 
-.tile-detail {
+.image img {
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
 
+#paper {
+    max-width: 3.5rem;
+}
+
+.img-tile-text {
+    text-align: center;
 }
 
 /* Info Tile Section */
 .info-tiles {
-
+    justify-content: space-around;
+    margin-bottom: 5rem;
 }
 
 .text-tile {
+    max-width: 35%;
 
 }
 
 .tile-heading {
-
-}
-
-.tile-detail {
-
+    width: 10rem;
+    background-color: cadetblue;
+    padding: .5rem 1.25rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
 }
 
 /* Footer Section */
 footer {
-
+    background-color: azure;
 }
 
 .footer-content {
-
-}
-
-.copyright {
-
+    padding: 4rem;
 }
