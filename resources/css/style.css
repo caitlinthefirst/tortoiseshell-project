@@ -1,0 +1,100 @@
+html {
+    font-size: 18px;
+}
+
+/* Pagewide Rules */
+body {
+    line-height: 1.4rem;
+    font-family: helvetica;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+nav,
+.tagline,
+.feature-tiles,
+.info-tiles,
+footer {
+    width: 960px;
+}
+
+/* Flex Boxes */
+
+body,
+nav,
+.site-title,
+.nav-menu,
+.feature-tiles,
+.info-tiles,
+.footer-content {
+    display: flex;
+}
+
+
+/* Header Section */
+header {
+
+}
+
+nav {
+
+}
+
+.site-title {
+
+}
+
+.nav-menu {
+
+}
+
+.nav-item {
+
+}
+
+.tagline {
+
+}
+
+/* Feature Tile Section */
+.feature-tiles {
+
+}
+
+.img-tile {
+
+}
+
+.tile-detail {
+
+}
+
+/* Info Tile Section */
+.info-tiles {
+
+}
+
+.text-tile {
+
+}
+
+.tile-heading {
+
+}
+
+.tile-detail {
+
+}
+
+/* Footer Section */
+footer {
+
+}
+
+.footer-content {
+
+}
+
+.copyright {
+
+}
