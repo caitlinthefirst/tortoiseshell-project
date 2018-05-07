@@ -7,23 +7,25 @@ body {
     line-height: 1.4rem;
     font-family: helvetica;
     flex-direction: column;
-    margin: 0 auto;
+    justify-content: center;
 }
 
 nav,
-.tagline,
+.banner-container,
 .feature-tiles,
 .info-tiles,
 footer {
     width: 960px;
+    margin: 0 auto;
 }
 
 /* Flex Boxes */
 
 body,
 nav,
-.site-title,
+.site-name,
 .nav-menu,
+.banner-container,
 .feature-tiles,
 .info-tiles,
 .footer-content {
@@ -33,27 +35,60 @@ nav,
 
 /* Header Section */
 header {
-
+    height: 30rem;
+    background-image: url("../images/glasses-bg.png");
+    background-size: cover;
+    background-position: center;
 }
 
 nav {
-
+    background-color: cadetblue;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 1rem;
+    margin-top: 1rem;
 }
 
-.site-title {
-
+.site-name {
+    align-items: center;
+    padding-left: 1rem;
 }
 
-.nav-menu {
+.nav-logo {
+    height: 1.5rem;
+    margin-right: 1rem;
+}
 
+.nav-item,
+.nav-title {
+    font-size: 1rem;
+    font-weight: lighter;
+    letter-spacing: .07rem;
 }
 
 .nav-item {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 1rem;
+}
 
+.banner-container {
+    justify-content: flex-end;
 }
 
 .tagline {
+    display: inline-block;
 
+    background-color: white;
+    padding: 3rem 5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+    margin-top: 10rem;
+    margin-right: -2rem;
 }
 
 /* Feature Tile Section */
