@@ -52,6 +52,10 @@ nav {
     margin-top: 1rem;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 .site-name {
     align-items: center;
     padding-left: 1rem;
@@ -94,6 +98,7 @@ nav {
 /* Tablet Header */
 
 @media only screen and (max-width: 1024px) {
+
     nav,
     .banner-container,
     .feature-tiles,
@@ -101,6 +106,7 @@ nav {
     footer {
         width: 100%;
         margin: 0 auto;
+        font-size: .77rem;
     }
 
     header {
@@ -116,6 +122,37 @@ nav {
         font-size: 1.33rem;
         margin-top: 5rem;
         margin-right: 2rem;
+    }
+}
+
+/* Smartphone Header */
+@media only screen and (max-width: 700px) {
+
+    header {
+        height: 17rem;
+        background-position: 20%;
+    }
+
+    .nav-title {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    .banner {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.33rem;
+        margin-top: 9rem;
+        margin-right: 0;
+        text-align: center;
+        font-size: 1rem;
     }
 }
 
@@ -145,6 +182,22 @@ nav {
 
 .img-tile-text {
     text-align: center;
+}
+
+/* Mobile Feature Tile */
+
+@media only screen and (max-width: 700px) {
+
+    .feature-tiles {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 0;
+    }
+
+    .img-tile {
+        margin: .75rem 0;
+    }
 }
 
 /* Info Tile Section */
