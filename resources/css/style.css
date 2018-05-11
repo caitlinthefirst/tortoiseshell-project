@@ -106,7 +106,6 @@ nav {
     footer {
         width: 100%;
         margin: 0 auto;
-        font-size: .77rem;
     }
 
     header {
@@ -148,7 +147,7 @@ nav {
     .banner {
         width: 100%;
         padding: 1rem;
-        font-size: 1.33rem;
+        font-size: 1rem;
         margin-top: 9rem;
         margin-right: 0;
         text-align: center;
@@ -184,7 +183,7 @@ nav {
     text-align: center;
 }
 
-/* Mobile Feature Tile */
+/* Mobile Feature Tiles */
 
 @media only screen and (max-width: 700px) {
 
@@ -192,10 +191,13 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 3rem 0;
+        margin: 3rem 0;
+        font-size: .77rem;
     }
 
     .img-tile {
+        justify-content: center;
+        height: auto;
         margin: .75rem 0;
     }
 }
@@ -203,22 +205,47 @@ nav {
 /* Info Tile Section */
 .info-tiles {
     justify-content: space-around;
-    margin-bottom: 5rem;
 }
 
 .text-tile {
     max-width: 35%;
-
+    margin-bottom: 5rem;
 }
 
 .tile-heading {
     width: 10rem;
     background-color: cadetblue;
     padding: .5rem 1.25rem;
+    margin-bottom: 1rem;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: bold;
     color: white;
+}
+
+/* Mobile Info Tiles */
+
+@media only screen and (max-width: 700px) {
+    .info-tiles {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .text-tile {
+        max-width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .tile-heading {
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .tile-detail {
+        padding: 0 .5rem;
+        font-size: .77rem;
+    }
 }
 
 /* Footer Section */
@@ -228,4 +255,18 @@ footer {
 
 .footer-content {
     padding: 4rem;
+}
+
+/* Mobile Footer */
+
+@media only screen and (max-width: 700px) {
+
+    .footer-content {
+        justify-content: center;
+    }
+
+    .copyright {
+        display: none;
+    }
+
 }
